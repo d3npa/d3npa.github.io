@@ -1,0 +1,54 @@
+:root {
+    --bio-width: 60ch;
+    --links-width: 40ch;
+}
+
+html, body, section, .container {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--fg);
+    color: var(--bg);
+}
+
+.container {
+    /* Center everything in body vertically & horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: var(--bio-width);
+    max-width: var(--bio-width);
+    margin: auto;
+}
+
+#bio {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#links {
+    width: var(--links-width);
+    max-width: var(--links-width);
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    /* border: solid var(--fg) 1px; */
+    display: flex;
+    flex-direction: column;
+}
+
+#links > * {
+    flex: 1;
+}
+
+#contact {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
